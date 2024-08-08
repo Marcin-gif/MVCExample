@@ -39,7 +39,7 @@ namespace MVCExample.Repositories
                 result.Description = task.Description;
                 result.Done = task.Done;
             }
-            
+            _context.Tasks.Update(task);
             _context.SaveChanges();
         }
     }
